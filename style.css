@@ -1,0 +1,19 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.grid{
+  font-size: 0;
+  text-align: justify;
+}
+
+.grid > * {
+  display: inline-block;
+  font-size: medium;
+}
+
+.grid:after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
