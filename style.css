@@ -10,10 +10,55 @@
 .grid > * {
   display: inline-block;
   font-size: medium;
+  text-align: left;
 }
 
 .grid:after{
   content: "";
   display: inline-block;
   width: 100%;
+}
+
+.content-grid{
+  margin: auto;
+}
+.content-grid > * {
+  vertical-align: top;
+  max-width: 1024px;
+  margin: 10rem auto 0;
+}
+
+.content-grid .left-column{
+  width: 25%;
+  position: relative;
+
+}
+.logo {
+    background-image: url(https://www.theironyard.com/assets/iron-yard-logo-709fbbf7ff0d1d76e83b9a782b79e7c4edb840974a7b3d9dd4f33b8cf5b87571.svg);
+    background-size: 100%;
+    background-color: #233139;
+    background-position: center center;
+    position: absolute;
+    display: block;
+    width: 75%;
+    top: -15rem;
+    border-radius: 50%;
+    border: 6px white solid;
+}
+.logo:after {
+  content: "";
+  display: inline-block;
+  padding-top: 100%;
+
+}
+
+.content-grid .right-column{
+  width: 75%;
+}
+
+.header-image{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/12/Downtown_Houston_Skyline_Night.JPG);
+  height: 30vw;
+  background-position: center;
+  background-size: cover;
 }
